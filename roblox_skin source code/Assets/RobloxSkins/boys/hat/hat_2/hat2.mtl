@@ -1,0 +1,14 @@
+newmtl TheBoisHat1Mtl
+Material Color
+Ka 1 0 0.00604059
+Kd 1 0 0.00604059
+Ks 0.0627451 0 0.000379018 
+
+d 1
+
+Ns 0
+
+map_Ka TheBoisHat1_diff.png
+map_Kd TheBoisHat1_diff.png
+map_d TheBoisHat1_diff.png
+

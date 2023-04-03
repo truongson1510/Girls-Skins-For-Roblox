@@ -1,0 +1,12 @@
+newmtl Union1Mtl
+Material Color
+Ka 0.940601 0.940601 0.940601
+Kd 0.940601 0.940601 0.940601
+Ks 0.372552 0.372552 0.372552 
+
+d 1
+
+Ns 0
+
+map_Bump Union1_nmap.png
+
