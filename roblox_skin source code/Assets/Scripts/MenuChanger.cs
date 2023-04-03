@@ -16,7 +16,7 @@ public class MenuChanger : MonoBehaviour
     public void To_Gender_Selection()
     {
         SceneManager.LoadScene("Style");
-        GoogleMobileAdsDemoScript.Instance.ShowInterstitial();
+        Debug.Log("SHOW INTER HERE: ");
 
 
 
@@ -26,7 +26,7 @@ public class MenuChanger : MonoBehaviour
     public void To_MapDance_Scene()
     {
         SceneManager.LoadScene("Map_Dance_scene");
-        GoogleMobileAdsDemoScript.Instance.ShowInterstitial();
+        Debug.Log("SHOW INTER HERE: ");
 
 
 

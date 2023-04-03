@@ -31,7 +31,8 @@ public class CameraMotion : MonoBehaviour
         LeanTween.move(this.gameObject, target.position, 1);
         LeanTween.rotate(this.gameObject, target.eulerAngles, 1);
         StartCoroutine(StartMove());
-        GoogleMobileAdsDemoScript.Instance.ShowInterstitial();
+
+        Debug.Log("SHOW INTER HERE: ");
     }
     IEnumerator StartMove()
     {
@@ -58,6 +59,6 @@ public class CameraMotion : MonoBehaviour
         yield return new WaitForSeconds(4f);
         rotate = false;
         CapturCanv.SetActive(true);
-        GoogleMobileAdsDemoScript.Instance.ShowInterstitial();
+        Debug.Log("SHOW INTER HERE: ");
     }
 }

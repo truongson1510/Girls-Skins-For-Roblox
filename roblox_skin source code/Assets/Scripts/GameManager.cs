@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         caption.GetComponent<Animator>().SetTrigger("Capture");
         text.SetActive(false);
         //StartCoroutine(animateCaption());
-        GoogleMobileAdsDemoScript.Instance.ShowInterstitial();
+        Debug.Log("SHOW INTER HERE: ");
     }
     IEnumerator animateCaption()
     {
