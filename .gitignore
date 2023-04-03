@@ -2,13 +2,14 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -54,7 +55,42 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.unitypackage.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
 
+# exclude VSCode directory
+.vscode
+
+# Android Resolver generated files
+[Aa]ssets/GeneratedLocalRepo/*
+![Aa]ssets/GeneratedLocalRepo/readme.txt
+![Aa]ssets/GeneratedLocalRepo/readme.txt.meta
+
+# Files for the Firebase Desktop
+[Aa]ssets/StreamingAssets/google-services-desktop.json
+[Aa]ssets/StreamingAssets/google-services-desktop.json.meta
+
+# exported project
+[Ee]xport
+
+# rsp
+Assets/csc.rsp
+Assets/csc.rsp.meta
+
+# JetBrains Rider cache directory
+.idea/
+Assets/Plugins/Editor/JetBrains*
+
+# If you are using ExternalDependencyManager, it is not necessary, so if the following folders exist, delete them.
+[Aa]ssets/PlayServicesResolver
+[Aa]ssets/PlayServicesResolver.meta
+
+# Firebase remote config data
+remote_config_data
+
+# for Tools script
+/tmp
+/firebase_unity_sdk
+/ProjectSettings/ProjectVersion.txt
