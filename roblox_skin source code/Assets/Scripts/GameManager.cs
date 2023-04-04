@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator animateCaption()
     {
-        LeanTween.scale(caption, new Vector3(0.9f, 0.9f, 0.9f), 0.2f);
+        //LeanTween.scale(caption, new Vector3(0.9f, 0.9f, 0.9f), 0.2f);
         yield return new WaitForSeconds(0.2f);
-        LeanTween.scale(caption, new Vector3(1f, 1f, 1f), 0.2f);
+        //LeanTween.scale(caption, new Vector3(1f, 1f, 1f), 0.2f);
     }
 
     public void loadSceenHome(string nameSceen)
