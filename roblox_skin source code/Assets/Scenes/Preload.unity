@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2357030591323195644, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2357030591451851819, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -431,6 +435,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2357030592202501057, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f054d57966586004b8b2ec08e3c31942, type: 2}
+    - target: {fileID: 2357030592202501057, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5081814643255201125, guid: f054d57966586004b8b2ec08e3c31942, type: 2}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747978, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 37a2a4440f866754d9f370b920b3ed8f, type: 3}
     - target: {fileID: 2357030592417747978, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
       propertyPath: m_Color.b
       value: 1

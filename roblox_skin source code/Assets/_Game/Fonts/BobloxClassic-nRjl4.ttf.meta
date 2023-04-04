@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0da608fbe2b3bc74a97d8c63269bbbb2
+guid: f348f56d045972c498eb1034a19e7b2a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Itim
+  - BobloxClassic
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 3
