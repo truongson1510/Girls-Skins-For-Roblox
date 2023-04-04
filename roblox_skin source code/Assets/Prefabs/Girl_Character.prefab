@@ -49,7 +49,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &32431765110372507
 Transform:
   m_ObjectHideFlags: 0
@@ -528,6 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963412100836219300}
   - component: {fileID: 1185748848719135505}
+  - component: {fileID: 1155059846029336250}
   m_Layer: 0
   m_Name: Girl_Character
   m_TagString: Untagged
@@ -542,7 +543,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185748848719135518}
-  m_LocalRotation: {x: -0, y: 0.9999746, z: -0, w: -0.0071270065}
+  m_LocalRotation: {x: 0, y: 0.99997467, z: -0, w: -0.0071296166}
   m_LocalPosition: {x: -118.18443, y: -86.12, z: 606.6298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -589,7 +590,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 580ef30cddab9bd42a5ff8d5e542a9aa, type: 2}
   - {fileID: 2100000, guid: bb313b0c7b4be0f48855feb07cb8e373, type: 2}
   hair:
-  - {fileID: 32431765110372504}
+  - {fileID: 3823003822761212384}
   - {fileID: 914883099988905462}
   - {fileID: 914883099876055758}
   - {fileID: 914883100877212146}
@@ -605,6 +606,31 @@ MonoBehaviour:
   - {fileID: 914883101415572760}
   - {fileID: 914883101283452977}
   - {fileID: 914883100737934614}
+  Backgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!95 &1155059846029336250
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185748848719135518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9feb320ccc8b544db9511dda4500c466, type: 3}
+  m_Controller: {fileID: 9100000, guid: 62f907f3ab53c4a22ad4931d043ca730, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1284638715779987865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3468723350742852572}
   m_LocalRotation: {x: -0.00000039208027, y: -0.0071291, z: 0.000023824054, w: 0.9999746}
-  m_LocalPosition: {x: -131.50511, y: 106.81119, z: 507.0645}
+  m_LocalPosition: {x: -131.6, y: 106.81119, z: 507.06564}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3066,7 +3092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 78d418e5df1e079469c4aad1a6f5bb4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4937918540377494556, guid: 78d418e5df1e079469c4aad1a6f5bb4c, type: 3}
       propertyPath: m_CastShadows
