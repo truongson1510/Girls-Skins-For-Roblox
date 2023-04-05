@@ -1,14 +1,14 @@
 
 using UnityEngine;
+using BacSonStudio;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class ButtonNavigation : MonoBehaviour
+public class ButtonNavigation : ClickableListItem
 {
-	#region Inspector Variables
+    #region Inspector Variables
 
-	private Button button;
-
+    [SerializeField] private GameObject selectIcon;
+    
     #endregion
 
     #region Member Variables
@@ -21,14 +21,14 @@ public class ButtonNavigation : MonoBehaviour
 
     #region Unity Methods
 
-    private void Awake()
-    {
-        button = GetComponent<Button>();
-    }
-
     #endregion
 
     #region Public Methods
+
+    public void SetSelected(bool state)
+    {
+        selectIcon.SetActive(state);
+    }
 
     #endregion
 
