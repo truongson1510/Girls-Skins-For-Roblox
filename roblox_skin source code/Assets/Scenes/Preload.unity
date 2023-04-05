@@ -451,6 +451,22 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 380
       objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357030592417747977, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2357030592417747978, guid: 8712c24ce6b909a43af8efcdf4ab41ba, type: 3}
       propertyPath: m_Sprite
       value: 
