@@ -1,13 +1,14 @@
-
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NavigationController : MonoBehaviour
+public class MenuItem : MonoBehaviour
 {
 	#region Inspector Variables
 
 	[SerializeField] private List<ButtonNavigation> listButton;
+	[SerializeField] private List<GameObject>		listItemHolder;
 
 	#endregion
 
@@ -17,23 +18,22 @@ public class NavigationController : MonoBehaviour
 
 	#region Properties
 
-	public int			SelectedButtonIndex { get; set; }
-	//public Action<int>	OnButtonSelected	{ get; set; }
+	public int SelectedButtonIndex { get; set; }
 
-    #endregion
+	#endregion
 
-    #region Unity Methods
+	#region Unity Methods
 
-    private void Start()
-    {
+	private void Start()
+	{
 		Setup(0);
 	}
 
-    #endregion
+	#endregion
 
-    #region Public Methods
+	#region Public Methods
 
-    public void Setup(int selectedButtonIndex)
+	public void Setup(int selectedButtonIndex)
 	{
 		for (int i = 0; i < listButton.Count; i++)
 		{
@@ -58,12 +58,14 @@ public class NavigationController : MonoBehaviour
 	{
 		if (index != SelectedButtonIndex)
 		{
-			// Set the current selected ColorListItem to un-selected and select the new one
+			// Set the current selected button to un-selected and select the new one
 			listButton[SelectedButtonIndex].SetSelected(false);
+			listItemHolder[SelectedButtonIndex].SetActive(false);
+
 			listButton[index].SetSelected(true);
+			listItemHolder[index].SetActive(true);
 
 			SelectedButtonIndex = index;
-			//OnButtonSelected(index);
 		}
 	}
 
