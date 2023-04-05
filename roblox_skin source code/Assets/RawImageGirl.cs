@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(RawImage))]
 public class RawImageGirl : MonoBehaviour, IPointerDownHandler, IPointerMoveHandler, IPointerUpHandler
 {
     #region Inspector Variables
 
-    [SerializeField] 
-    private Transform   girlTransform;
+    [SerializeField] private Transform girlTransform;
 
     #endregion
 
