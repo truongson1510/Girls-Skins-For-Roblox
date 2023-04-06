@@ -8,7 +8,10 @@ public class UIManager : Singleton<UIManager>
     #region Inspector Variables
 
     [SerializeField] private Transform  panelMenu;
-    [SerializeField] private Transform  panelSave;
+    [SerializeField] private Transform  panelGameUpper;
+    [SerializeField] private Transform  panelGameLower;
+    [SerializeField] private Transform  panelSaveUpper;
+    [SerializeField] private Transform  panelSaveLower;
 
     [Space]
 
@@ -39,11 +42,29 @@ public class UIManager : Singleton<UIManager>
         screenWidth     = Screen.width;
         screenHeight    = Screen.height;
 
-        playButton.onClick.AddListener(() => { MovePanelMenuOut(true); });
-        backButton.onClick.AddListener(() => { MovePanelMenuOut(false); });
+        playButton.onClick.AddListener(() => 
+        { 
+            MovePanelMenuOut(true);
+            MovePanelGameOut(false);
+        });
 
-        saveButton.onClick.AddListener(() => { MovePanelSaveOut(true); });
-        menuButton.onClick.AddListener(() => { MovePanelSaveOut(false); });
+        backButton.onClick.AddListener(() => 
+        { 
+            MovePanelMenuOut(false);
+            MovePanelGameOut(true);
+        });
+
+        saveButton.onClick.AddListener(() => 
+        { 
+            MovePanelSaveOut(false);
+            MovePanelGameOut(true);
+        });
+
+        menuButton.onClick.AddListener(() => 
+        { 
+            MovePanelSaveOut(true);
+            MovePanelGameOut(false);
+        });
     }
 
     #endregion
@@ -68,22 +89,48 @@ public class UIManager : Singleton<UIManager>
         }
     }
 
+    public void MovePanelGameUpperOut(bool state)
+    {
+        if (state)
+            panelGameUpper.DOLocalMoveY(500f, 1f).SetEase(Ease.InOutBack);
+        else
+            panelGameUpper.DOLocalMoveY(0f, 1f).SetEase(Ease.OutBack);
+    }
+
+    public void MovePanelGameLowerOut(bool state)
+    {
+        if (state)
+            panelGameLower.DOLocalMoveY(-1000f, 1f).SetEase(Ease.InOutBack);
+        else
+            panelGameLower.DOLocalMoveY(0f, 1f).SetEase(Ease.OutBack);
+    }
+
+    public void MovePanelGameOut(bool state)
+    {
+        MovePanelGameUpperOut(state);
+        MovePanelGameLowerOut(state);
+    }
+
+    public void MovePanelSaveUpperOut(bool state)
+    {
+        if (state)
+            panelSaveUpper.DOLocalMoveY(500f, 1f).SetEase(Ease.InOutBack);
+        else
+            panelSaveUpper.DOLocalMoveY(0f, 1f).SetEase(Ease.OutBack);
+    }
+
+    public void MovePanelSaveLowerOut(bool state)
+    {
+        if (state)
+            panelSaveLower.DOLocalMoveY(-1000f, 1f).SetEase(Ease.InOutBack);
+        else
+            panelSaveLower.DOLocalMoveY(0f, 1f).SetEase(Ease.OutBack);
+    }
+
     public void MovePanelSaveOut(bool state)
     {
-        if (!isPanelMenuMoving)
-        {
-            isPanelMenuMoving = true;
-            if (state)
-            {
-                panelMenu.DOLocalMoveX(screenWidth, 1f).SetEase(Ease.InOutBack)
-                    .OnComplete(() => { isPanelMenuMoving = false; });
-            }
-            else
-            {
-                panelMenu.DOLocalMoveX(0f, 1f).SetEase(Ease.OutBack)
-                    .OnComplete(() => { isPanelMenuMoving = false; }); ;
-            }
-        }
+        MovePanelSaveUpperOut(state);
+        MovePanelSaveLowerOut(state);
     }
 
     #endregion
