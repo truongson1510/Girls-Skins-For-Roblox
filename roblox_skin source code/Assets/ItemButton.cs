@@ -6,27 +6,42 @@ public class ItemButton : MonoBehaviour
 {
 	#region Inspector Variables
 
-	/*private ItemType itemType;
-	public Sprite itemSprite;
-	public Material itemMaterial;*/
-
-
+	[SerializeField] private Image iconImage;
+	[SerializeField] private Button button;
 
 	#endregion
 
 	#region Member Variables
 
-	#endregion
 
-	#region Properties
+	private ItemData	data;
+	private int			index;
 
-	#endregion
+    #endregion
 
-	#region Unity Methods
+    #region Properties
 
-	#endregion
+    #endregion
 
-	#region Public Methods
+    #region Unity Methods
+
+    private void OnEnable()
+    {
+        // scale up
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    public void Setup(ItemData data, int index)
+    {
+		this.data	= data;
+		this.index	= index;
+
+		iconImage.sprite = data.itemSprite;
+		button.onClick.AddListener(OnClick);
+	}
 
 	#endregion
 
@@ -35,6 +50,11 @@ public class ItemButton : MonoBehaviour
 	#endregion
 
 	#region Private Methods
+
+	private void OnClick()
+    {
+		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial);
+	}
 
 	#endregion
 }

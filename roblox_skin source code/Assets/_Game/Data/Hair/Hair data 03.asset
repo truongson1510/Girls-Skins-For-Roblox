@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hair data 03
   m_EditorClassIdentifier: 
   itemType: 2
-  itemSprite: {fileID: 0}
-  itemMaterial: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: f59be05139ae0448eb82af3209dea7c6, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 1c842f45cfd288d42bfefa4dafee38bc, type: 2}

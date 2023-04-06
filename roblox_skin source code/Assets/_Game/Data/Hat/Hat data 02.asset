@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Hat data 02
   m_EditorClassIdentifier: 
   itemType: 5
-  itemSprite: {fileID: 0}
-  itemMaterial: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 70816c4a55b2a454baf411502a031289, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 4882d9606744f214e9d061c82e71b132, type: 2}

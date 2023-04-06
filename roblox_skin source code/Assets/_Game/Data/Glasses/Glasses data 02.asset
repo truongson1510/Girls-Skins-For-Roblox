@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Glasses data 02
   m_EditorClassIdentifier: 
   itemType: 4
-  itemSprite: {fileID: 0}
-  itemMaterial: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 09f42fc33d113412e99c91ed72557d4c, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 3944f29c35effe4488a5747ed8cbf478, type: 2}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Shirt data 04
   m_EditorClassIdentifier: 
   itemType: 1
-  itemSprite: {fileID: 0}
-  itemMaterial: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: c07ea1a636e9d4d758453db3a346fb04, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 0d699536548d1f64696800ad2f2ac20e, type: 2}
