@@ -26,7 +26,6 @@ public class UIManager : Singleton<UIManager>
 
     #region Member Variables
 
-    private int screenWidth;
     private int screenHeight;
 
     private bool isPanelMenuMoving;
@@ -41,8 +40,7 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
-        screenWidth     = Screen.width;
-        screenHeight    = Screen.height;
+        screenHeight    = Screen.height * 2;
 
         playButton.onClick.AddListener(() => 
         { 
@@ -80,7 +78,7 @@ public class UIManager : Singleton<UIManager>
             isPanelMenuMoving = true;
             if (state)
             {
-                panelMenu.DOLocalMoveX(-screenWidth, 1f).SetEase(Ease.InOutBack)
+                panelMenu.DOLocalMoveX(-screenHeight, 1f).SetEase(Ease.InOutBack)
                     .OnComplete(() => { isPanelMenuMoving = false; });
             }
             else
