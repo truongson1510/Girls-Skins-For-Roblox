@@ -114,48 +114,56 @@ public class MenuItem : MonoBehaviour
 
 	private void Init()
 	{
-		/// Spawn item skin for face
-		for (int i = 0; i < listFace.Count; i++)
+		// Calcualte and spawn items to its menu
+        for (int i = 0; i < listItemHolder.Count; i++)
         {
-			GameObject item = Instantiate(itemButton, contentFace);
-			item.GetComponent<ItemButton>().Setup(listFace[i], i);
+			ItemType currentType	= (ItemType)(i);
+			List<ItemData> data		= new List<ItemData>();
+			Transform content		= transform;
+
+			// Calcualte menu
+			switch (currentType)
+            {
+                case ItemType.Face:
+					data.AddRange(listFace);
+					content = contentFace;
+					break;
+
+                case ItemType.Shirt:
+					data.AddRange(listShirt);
+					content = contentShirt;
+					break;
+
+                case ItemType.Hair:
+					data.AddRange(listHair);
+					content = contentHair;
+					break;
+
+                case ItemType.Pant:
+					data.AddRange(listPant);
+					content = contentPant;
+					break;
+
+                case ItemType.Glasses:
+					data.AddRange(listGlasses);
+					content = contentGlasses;
+					break;
+
+                case ItemType.Hat:
+					data.AddRange(listHat);
+					content = contentHat;
+					break;
+            }
+
+			// Spawn items
+            for (int j = 0; j < data.Count; j++)
+            {
+				GameObject item = Instantiate(itemButton, content);
+				item.GetComponent<ItemButton>().Setup(data[j], j);
+			}
 		}
 
-		/// Spawn item skin for shirt
-		for (int i = 0; i < listShirt.Count; i++)
-		{
-			GameObject item = Instantiate(itemButton, contentShirt);
-			item.GetComponent<ItemButton>().Setup(listShirt[i], i);
-		}
-
-		/// Spawn item skin for hair
-		for (int i = 0; i < listHair.Count; i++)
-		{
-			GameObject item = Instantiate(itemButton, contentHair);
-			item.GetComponent<ItemButton>().Setup(listHair[i], i);
-		}
-
-		/// Spawn item skin for pant
-		for (int i = 0; i < listPant.Count; i++)
-		{
-			GameObject item = Instantiate(itemButton, contentPant);
-			item.GetComponent<ItemButton>().Setup(listPant[i], i);
-		}
-
-		/// Spawn item skin for glasses
-		for (int i = 0; i < listGlasses.Count; i++)
-		{
-			GameObject item = Instantiate(itemButton, contentGlasses);
-			item.GetComponent<ItemButton>().Setup(listGlasses[i], i);
-		}
-
-		/// Spawn item skin for hat
-		for (int i = 0; i < listHat.Count; i++)
-		{
-			GameObject item = Instantiate(itemButton, contentHat);
-			item.GetComponent<ItemButton>().Setup(listHat[i], i);
-		}
-
+		// Choose the first menu
 		Setup(0);
 	}
 
