@@ -62,7 +62,7 @@ public class UIManager : Singleton<UIManager>
             }
             else
             {
-                panelMenu.DOLocalMoveX(0f, 1f).SetEase(Ease.InOutBack)
+                panelMenu.DOLocalMoveX(0f, 1f).SetEase(Ease.OutBack)
                     .OnComplete(() => { isPanelMenuMoving = false; }); ;
             }
         }
@@ -80,7 +80,7 @@ public class UIManager : Singleton<UIManager>
             }
             else
             {
-                panelMenu.DOLocalMoveX(0f, 1f).SetEase(Ease.InOutBack)
+                panelMenu.DOLocalMoveX(0f, 1f).SetEase(Ease.OutBack)
                     .OnComplete(() => { isPanelMenuMoving = false; }); ;
             }
         }
