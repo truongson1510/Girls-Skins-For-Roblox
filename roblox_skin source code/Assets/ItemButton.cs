@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.UI;
 
 public class ItemButton : MonoBehaviour
@@ -27,8 +28,9 @@ public class ItemButton : MonoBehaviour
 
     private void OnEnable()
     {
-        // scale up
-    }
+		transform.localScale = Vector3.zero;
+		transform.DOScale(1, 0.25f).SetEase(Ease.OutBack);
+	}
 
     #endregion
 
