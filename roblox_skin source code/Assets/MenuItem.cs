@@ -2,13 +2,32 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 public class MenuItem : MonoBehaviour
 {
 	#region Inspector Variables
 
+	[Space]
+
 	[SerializeField] private List<ButtonNavigation> listButton;
 	[SerializeField] private List<GameObject>		listItemHolder;
+
+	[Space]
+
+	[TableList]
+	[SerializeField] private List<ItemData> listFace;
+	[TableList]
+	[SerializeField] private List<ItemData> listGlasses;
+	[TableList]
+	[SerializeField] private List<ItemData> listHair;
+	[TableList]
+	[SerializeField] private List<ItemData> listHat;
+	[TableList]
+	[SerializeField] private List<ItemData> listPant;
+	[TableList]
+	[SerializeField] private List<ItemData> listShirt;
+
 
 	#endregion
 

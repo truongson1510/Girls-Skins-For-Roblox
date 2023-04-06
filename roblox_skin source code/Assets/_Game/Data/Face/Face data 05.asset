@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Face data 05
   m_EditorClassIdentifier: 
   itemType: 0
-  itemSprite: {fileID: 0}
-  itemMaterial: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 0049f9c2d3ced4a178ab286fbd3222ac, type: 3}
+  itemMaterial: {fileID: 2100000, guid: 9d896682d15a7c94c9f55ce026249254, type: 2}

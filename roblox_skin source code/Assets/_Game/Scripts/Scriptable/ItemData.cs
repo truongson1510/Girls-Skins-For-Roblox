@@ -18,6 +18,7 @@ public class ItemData : ScriptableObject
 	#region Inspector Variables
 
 	public ItemType itemType;
+	[PreviewField]
 	public Sprite	itemSprite;
 	public Material itemMaterial;
 
