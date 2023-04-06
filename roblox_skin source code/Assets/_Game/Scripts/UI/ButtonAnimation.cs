@@ -49,6 +49,9 @@ namespace BacSonStudio
 
 		private void PunchScale()
         {
+			// Play sound
+			AudioManager.Instance.PlayButtonClickSound();
+
 			// Kill any currently running tweens on this transform
 			transform.DOKill();
 

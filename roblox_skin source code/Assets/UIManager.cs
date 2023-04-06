@@ -7,6 +7,8 @@ public class UIManager : Singleton<UIManager>
 {
     #region Inspector Variables
 
+    [Space]
+
     [SerializeField] private Transform  panelMenu;
     [SerializeField] private Transform  panelGameUpper;
     [SerializeField] private Transform  panelGameLower;
