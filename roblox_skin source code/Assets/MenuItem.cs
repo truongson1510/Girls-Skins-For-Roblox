@@ -17,24 +17,19 @@ public class MenuItem : MonoBehaviour
 
 	[TableList]
 	[SerializeField] private List<ItemData>			listFace;
-	[SerializeField] private Transform contentFace;
-
+	[SerializeField] private Transform				contentFace;
 	[TableList]
 	[SerializeField] private List<ItemData>			listGlasses;
 	[SerializeField] private Transform				contentGlasses;
-
 	[TableList]
 	[SerializeField] private List<ItemData>			listHair;
 	[SerializeField] private Transform				contentHair;
-
 	[TableList]
 	[SerializeField] private List<ItemData>			listHat;
 	[SerializeField] private Transform				contentHat;
-
 	[TableList]
 	[SerializeField] private List<ItemData>			listPant;
 	[SerializeField] private Transform				contentPant;
-
 	[TableList]
 	[SerializeField] private List<ItemData>			listShirt;
 	[SerializeField] private Transform				contentShirt;
@@ -112,6 +107,9 @@ public class MenuItem : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// 
+	/// </summary>
 	private void Init()
 	{
 		// Calcualte and spawn items to its menu
