@@ -6275,6 +6275,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0caea5e08273faf468a46f2ff70d96c8, type: 2}
   - {fileID: 11400000, guid: e39828d45c2ffdc428fa383f92a58690, type: 2}
   - {fileID: 11400000, guid: c0e8cbaeb51b0654a8b823d92ce6904a, type: 2}
+  - {fileID: 11400000, guid: f297b92c04b0e9a4380d1ba7bb2e7a4f, type: 2}
   contentGlasses: {fileID: 156736007}
   listHair:
   - {fileID: 11400000, guid: 6b447e0720b60c242a6579ea5072017e, type: 2}
@@ -6283,11 +6284,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5dd3e817f5b3d854a949758a7262926e, type: 2}
   - {fileID: 11400000, guid: 2c854307351bb454b89f9bf820054505, type: 2}
   - {fileID: 11400000, guid: 062be0c41c112c945b0bf6ac45aa007b, type: 2}
+  - {fileID: 11400000, guid: c1d5d9f1517280d469f1c9c488429d53, type: 2}
   contentHair: {fileID: 1150092277}
   listHat:
   - {fileID: 11400000, guid: ae512349f4c4cb84599b3f082caa4c4e, type: 2}
   - {fileID: 11400000, guid: b7c7f10c81842dc4dbd3c2122c9193aa, type: 2}
   - {fileID: 11400000, guid: efe22b20b54ae4a478fb892b3762a41d, type: 2}
+  - {fileID: 11400000, guid: eb7a97f57bf1bd64aa6f903dca0de986, type: 2}
   contentHat: {fileID: 1311808191}
   listPant:
   - {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
