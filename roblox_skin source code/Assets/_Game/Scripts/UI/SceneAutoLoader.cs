@@ -37,12 +37,6 @@ public class SceneAutoLoader : MonoBehaviour
 
     #region Unity Methods
 
-    private void Awake()
-    {
-        Application.targetFrameRate = 60;
-        Application.runInBackground = true;
-    }
-
     private void Start()
     {
         Observable.Timer(TimeSpan.FromSeconds(0.15f)).Take(1).Subscribe(_ =>

@@ -9,6 +9,7 @@ public class UIManager : Singleton<UIManager>
 
     [Space]
 
+    [SerializeField] private Transform  panelRate;
     [SerializeField] private Transform  panelMenu;
     [SerializeField] private Transform  panelGameUpper;
     [SerializeField] private Transform  panelGameLower;
@@ -67,9 +68,25 @@ public class UIManager : Singleton<UIManager>
         });
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OpenRating();
+        }
+    }
+
     #endregion
 
     #region Public Methods
+
+    public void OpenRating()
+    {
+        if(PlayerPrefs.GetInt(StringCollection.DATA_RATED)  != 1)
+        {
+            panelRate.gameObject.SetActive(true);
+        }
+    }
 
     public void MovePanelMenuOut(bool state)
     {

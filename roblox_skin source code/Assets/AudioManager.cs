@@ -8,23 +8,30 @@ public class AudioManager : Singleton<AudioManager>
 	[SerializeField] private AudioSource	audioPlayer;
 	[SerializeField] private AudioClip		buttonClickSound;
 
-	#endregion
+    #endregion
 
-	#region Member Variables
+    #region Member Variables
 
-	#endregion
+    #endregion
 
-	#region Properties
+    #region Properties
 
-	#endregion
+    #endregion
 
-	#region Unity Methods
+    #region Unity Methods
 
-	#endregion
+    private void Start()
+    {
+        Application.runInBackground = true;
+        Application.targetFrameRate = 120;
+        Screen.sleepTimeout         = SleepTimeout.NeverSleep;
+    }
 
-	#region Public Methods
+    #endregion
 
-	public void PlayButtonClickSound()
+    #region Public Methods
+
+    public void PlayButtonClickSound()
     {
 		audioPlayer.PlayOneShot(buttonClickSound);
 
