@@ -8,8 +8,10 @@ public class GirlSkin : Singleton<GirlSkin>
 
     [Header("MeshRenderers")]
     [SerializeField] private GameObject         faceRenderer;
-    [SerializeField] private List<GameObject>   pantRenderer;
-    [SerializeField] private List<GameObject>   shirtRenderer;
+
+    [Header("Reference Materials")]
+    [SerializeField] private Material           pantMaterial;
+    [SerializeField] private Material           shirtMaterial;
 
     [Header("Gameobjects")]
     [SerializeField] private List<GameObject>   hatCollection;
@@ -92,10 +94,10 @@ public class GirlSkin : Singleton<GirlSkin>
     /// <param name="material"></param>
     private void ChangeShirt(Material material)
     {
-        foreach (var shirt in shirtRenderer)
+        /*foreach (var shirt in shirtMaterial)
         {
             shirt.GetComponent<SkinnedMeshRenderer>().material = material;
-        }
+        }*/
     }
 
     /// <summary>
@@ -104,10 +106,10 @@ public class GirlSkin : Singleton<GirlSkin>
     /// <param name="material"></param>
     private void ChangePant(Material material)
     {
-        foreach (var pant in pantRenderer)
+        /*foreach (var pant in pantMaterial)
         {
             pant.GetComponent<SkinnedMeshRenderer>().material = material;
-        }
+        }*/
     }
 
     /// <summary>

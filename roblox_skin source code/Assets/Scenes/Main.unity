@@ -199,11 +199,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &369628649 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 369628649, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-  m_PrefabInstance: {fileID: 2618371343987896592}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &598083692
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +750,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1157,7 +1152,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1351,86 +1346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 354263250, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 354263250, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 354263250, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: 97690656
-      objectReference: {fileID: 0}
-    - target: {fileID: 369628648, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1232358126, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -270
-      objectReference: {fileID: 0}
-    - target: {fileID: 1835516723, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1835516723, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1835516723, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: 97690656
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 385.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 513.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 128.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
     - target: {fileID: 2618371342570394005, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: girlTransform
       value: 
@@ -1583,22 +1498,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 642.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
     - target: {fileID: 6576259282023142754, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_Name
       value: '[Canvas] Game Canvas'
@@ -1686,26 +1585,6 @@ PrefabInstance:
     - target: {fileID: 6576259282023142758, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6576259282023142759, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: panelRate
-      value: 
-      objectReference: {fileID: 369628649}
-    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 257.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
@@ -2033,7 +1912,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2601,13 +2480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceRenderer: {fileID: 3538047613739669797}
-  pantRenderer:
-  - {fileID: 6584448167718805534}
-  - {fileID: 2704815980240215316}
-  shirtRenderer:
-  - {fileID: 2384451498220705616}
-  - {fileID: 4033852244805913239}
-  - {fileID: 4408192163876106041}
+  pantMaterial: {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
+  shirtMaterial: {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
   hatCollection:
   - {fileID: 3743141120506742185}
   - {fileID: 3919233908511571747}
@@ -2914,7 +2788,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3189,7 +3063,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
