@@ -68,14 +68,6 @@ public class UIManager : Singleton<UIManager>
         });
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OpenRating();
-        }
-    }
-
     #endregion
 
     #region Public Methods

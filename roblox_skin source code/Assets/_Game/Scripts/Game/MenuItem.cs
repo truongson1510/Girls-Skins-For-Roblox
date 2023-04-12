@@ -54,6 +54,8 @@ public class MenuItem : MonoBehaviour
 
 	private void Start()
 	{
+		listPant.AddRange(AssetBundleManager.Instance.pantsBundle.dataItems);
+		listShirt.AddRange(AssetBundleManager.Instance.shirtsBundle.dataItems);
 		Init();
 	}
 

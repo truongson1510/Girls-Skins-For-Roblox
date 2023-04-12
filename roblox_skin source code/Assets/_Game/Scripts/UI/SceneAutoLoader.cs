@@ -8,7 +8,8 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class SceneAutoLoader : MonoBehaviour
+
+public class SceneAutoLoader : Singleton<SceneAutoLoader>
 {
     #region Enums
 
@@ -32,6 +33,7 @@ public class SceneAutoLoader : MonoBehaviour
     #region Member Variables
 
     private bool isLoaded = false;
+    private bool isAnimating = false;
 
     #endregion
 
@@ -39,6 +41,52 @@ public class SceneAutoLoader : MonoBehaviour
 
     private void Start()
     {
+        StartLoadingTextAnimation();
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.Clear();
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    private void StartLoadingTextAnimation()
+    {
+        if (!isAnimating)
+        {
+            isAnimating = true;
+            StartCoroutine(AnimateLoadingText());
+        }
+    }
+
+    private void StopLoadingTextAnimation()
+    {
+        if (isAnimating)
+        {
+            isAnimating = false;
+            StopCoroutine(AnimateLoadingText());
+        }
+    }
+
+    private IEnumerator AnimateLoadingText()
+    {
+        string[] loadingTextArray = { "Download assets .", "Download assets ..", "Download assets ..." };
+        int index = 0;
+
+        while (isAnimating)
+        {
+            loadingText.text = loadingTextArray[index];
+            index = (index + 1) % loadingTextArray.Length;
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    public void StartLoadingAsset()
+    {
+        StopLoadingTextAnimation();
         Observable.Timer(TimeSpan.FromSeconds(0.15f)).Take(1).Subscribe(_ =>
         {
             //verify if the scene is already open to avoid opening a scene twice
@@ -55,11 +103,6 @@ public class SceneAutoLoader : MonoBehaviour
             }
             Loading();
         });
-    }
-
-    private void OnDestroy()
-    {
-        DOTween.Clear();
     }
 
     #endregion
@@ -103,7 +146,7 @@ public class SceneAutoLoader : MonoBehaviour
             {
                 loadingBar.fillAmount = fillAmount;
                 percentage = (int)(fillAmount * 100);
-                loadingText.text = $"Loading... {percentage}%";
+                loadingText.text = $"Loading assets ... {percentage}%";
             })
             .OnComplete(() =>
             {
@@ -134,4 +177,6 @@ public class SceneAutoLoader : MonoBehaviour
     }
 
     #endregion
+
+
 }
