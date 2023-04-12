@@ -45,6 +45,11 @@ public class ItemButton : MonoBehaviour
 		button.onClick.AddListener(OnClick);
 	}
 
+	public void OnClick()
+	{
+		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial, data.ingameTexture);
+	}
+
 	#endregion
 
 	#region Protected Methods
@@ -52,11 +57,6 @@ public class ItemButton : MonoBehaviour
 	#endregion
 
 	#region Private Methods
-
-	private void OnClick()
-    {
-		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial, data.ingameTexture);
-	}
 
 	#endregion
 }

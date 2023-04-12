@@ -156,11 +156,20 @@ public class MenuItem : MonoBehaviour
             }
 
 			// Spawn items
-            for (int j = 0; j < data.Count; j++)
-            {
+			for (int j = 0; j < data.Count; j++)
+			{
 				GameObject item = Instantiate(itemButton, content);
 				item.GetComponent<ItemButton>().Setup(data[j], j);
-			}
+
+				// Pre-select first item of pant and shirt
+				if(j == 0)
+                {
+					if (currentType == ItemType.Shirt || currentType == ItemType.Pant)
+					{
+						item.GetComponent<ItemButton>().OnClick();
+					}
+				}
+            }
 		}
 
 		// Choose the first menu

@@ -94,7 +94,7 @@ public class GirlSkin : Singleton<GirlSkin>
     /// <param name="texture"></param>
     private void ChangeShirt(Texture2D texture)
     {
-        pantMaterial.SetTexture("_MainTex", texture);
+        shirtMaterial.SetTexture("_MainTex", texture);
     }
 
     /// <summary>

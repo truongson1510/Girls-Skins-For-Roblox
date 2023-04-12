@@ -1368,28 +1368,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.size
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.size
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 08d0a6411a9869a44ad56c722d7b8dc8, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 7467da09c2ef65e469f62dbe53745461, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: c41fb365e0577ab4992d2bd74a2977dd, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[4]
       value: 
@@ -1397,19 +1397,19 @@ PrefabInstance:
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: e01d07af2427622469949f71750b0ab9, type: 2}
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: f824b591344be9b408feac193acfb2e8, type: 2}
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: dbaae840ce3424c4a91430b41f7a767d, type: 2}
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 85fe2936a5ffc164caaaa251fec059e6, type: 2}
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[4]
       value: 
@@ -1720,6 +1720,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+--- !u!1 &2618371343987896593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2618371342713702584, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+  m_PrefabInstance: {fileID: 2618371343987896592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2618371343987896594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2618371343987896593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9585735aad7a2974f9034738dbad590b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2704815980240215316
 GameObject:
   m_ObjectHideFlags: 0
