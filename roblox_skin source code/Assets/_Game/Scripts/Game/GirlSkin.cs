@@ -8,8 +8,10 @@ public class GirlSkin : Singleton<GirlSkin>
 
     [Header("MeshRenderers")]
     [SerializeField] private GameObject         faceRenderer;
-    [SerializeField] private List<GameObject>   pantRenderer;
-    [SerializeField] private List<GameObject>   shirtRenderer;
+
+    [Header("Reference Materials")]
+    [SerializeField] private Material           pantMaterial;
+    [SerializeField] private Material           shirtMaterial;
 
     [Header("Gameobjects")]
     [SerializeField] private List<GameObject>   hatCollection;
@@ -39,7 +41,7 @@ public class GirlSkin : Singleton<GirlSkin>
 
     #region Public Methods
 
-    public void ChangeSkin(ItemType type, int index, Material material)
+    public void ChangeSkin(ItemType type, int index, Material material, Texture2D texture)
     {
         switch (type)
         {
@@ -48,7 +50,7 @@ public class GirlSkin : Singleton<GirlSkin>
                 break;
 
             case ItemType.Shirt:
-                ChangeShirt(material);
+                ChangeShirt(texture);
                 break;
 
             case ItemType.Hair:
@@ -56,7 +58,7 @@ public class GirlSkin : Singleton<GirlSkin>
                 break;
 
             case ItemType.Pant:
-                ChangePant(material);
+                ChangePant(texture);
                 break;
 
             case ItemType.Glasses:
@@ -89,25 +91,19 @@ public class GirlSkin : Singleton<GirlSkin>
     /// <summary>
     ///             Change skin for shirt 
     /// </summary>
-    /// <param name="material"></param>
-    private void ChangeShirt(Material material)
+    /// <param name="texture"></param>
+    private void ChangeShirt(Texture2D texture)
     {
-        foreach (var shirt in shirtRenderer)
-        {
-            shirt.GetComponent<SkinnedMeshRenderer>().material = material;
-        }
+        pantMaterial.SetTexture("_MainTex", texture);
     }
 
     /// <summary>
     ///             Change skin for pant 
     /// </summary>
-    /// <param name="material"></param>
-    private void ChangePant(Material material)
+    /// <param name="texture"></param>
+    private void ChangePant(Texture2D texture)
     {
-        foreach (var pant in pantRenderer)
-        {
-            pant.GetComponent<SkinnedMeshRenderer>().material = material;
-        }
+        pantMaterial.SetTexture("_MainTex", texture);
     }
 
     /// <summary>

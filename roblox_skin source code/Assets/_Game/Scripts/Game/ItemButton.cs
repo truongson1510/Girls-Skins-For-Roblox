@@ -55,7 +55,7 @@ public class ItemButton : MonoBehaviour
 
 	private void OnClick()
     {
-		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial);
+		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial, data.ingameTexture);
 	}
 
 	#endregion

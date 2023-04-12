@@ -87,7 +87,7 @@ public class AssetBundleData
     [HideInInspector] public string         url;
     [HideInInspector] public AssetBundle    bundle;
     [HideInInspector] public bool           isDownloadComplete;
-    public List<ItemData> dataItems;
+    [HideInInspector] public List<ItemData> dataItems;
 
     public IEnumerator DownloadAsset()
     {

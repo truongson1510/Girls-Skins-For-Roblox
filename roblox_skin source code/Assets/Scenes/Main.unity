@@ -750,7 +750,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1152,7 +1152,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1368,44 +1368,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.size
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.size
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 85fe2936a5ffc164caaaa251fec059e6, type: 2}
+      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: e01d07af2427622469949f71750b0ab9, type: 2}
+      objectReference: {fileID: 11400000, guid: 08d0a6411a9869a44ad56c722d7b8dc8, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: e01d07af2427622469949f71750b0ab9, type: 2}
+      objectReference: {fileID: 11400000, guid: 7467da09c2ef65e469f62dbe53745461, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listPant.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: e01d07af2427622469949f71750b0ab9, type: 2}
+      objectReference: {fileID: 11400000, guid: c41fb365e0577ab4992d2bd74a2977dd, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
+      objectReference: {fileID: 11400000, guid: e01d07af2427622469949f71750b0ab9, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
+      objectReference: {fileID: 11400000, guid: f824b591344be9b408feac193acfb2e8, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
+      objectReference: {fileID: 11400000, guid: dbaae840ce3424c4a91430b41f7a767d, type: 2}
     - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: listShirt.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: a060bdcb81754be4ab1f4da8570f7772, type: 2}
+      objectReference: {fileID: 11400000, guid: 85fe2936a5ffc164caaaa251fec059e6, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
     - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2036,7 +2044,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2580,7 +2588,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149569607454}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 99e66c89c0768ca42aabc3a7688512de, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 39d5062dde0f7ec4990158316cc7ae81, type: 3}
   m_Controller: {fileID: 9100000, guid: aca43df1c22277744a00b7f505db86b9, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -2604,13 +2612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceRenderer: {fileID: 3538047613739669797}
-  pantRenderer:
-  - {fileID: 6584448167718805534}
-  - {fileID: 2704815980240215316}
-  shirtRenderer:
-  - {fileID: 2384451498220705616}
-  - {fileID: 4033852244805913239}
-  - {fileID: 4408192163876106041}
+  pantMaterial: {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
+  shirtMaterial: {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
   hatCollection:
   - {fileID: 3743141120506742185}
   - {fileID: 3919233908511571747}
@@ -2917,7 +2920,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3192,7 +3195,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 80a27a8de3de21142a6ec1b7203975e9, type: 2}
+  - {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
