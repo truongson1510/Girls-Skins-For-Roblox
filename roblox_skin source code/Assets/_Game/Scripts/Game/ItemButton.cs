@@ -14,7 +14,6 @@ public class ItemButton : MonoBehaviour
 
 	#region Member Variables
 
-
 	private ItemData	data;
 	private int			index;
 
@@ -47,7 +46,7 @@ public class ItemButton : MonoBehaviour
 
 	public void OnClick()
 	{
-		GirlSkin.Instance.ChangeSkin(data.itemType, index, data.itemMaterial, data.ingameTexture);
+		GirlSkin.Instance.ChangeSkin(data.itemType, index, data);
 	}
 
 	#endregion

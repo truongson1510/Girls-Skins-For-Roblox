@@ -41,16 +41,16 @@ public class GirlSkin : Singleton<GirlSkin>
 
     #region Public Methods
 
-    public void ChangeSkin(ItemType type, int index, Material material, Texture2D texture)
+    public void ChangeSkin(ItemType type, int index, ItemData data)
     {
         switch (type)
         {
             case ItemType.Face:
-                ChangeFace(material);
+                ChangeFace(data);
                 break;
 
             case ItemType.Shirt:
-                ChangeShirt(texture);
+                ChangeShirt(data);
                 break;
 
             case ItemType.Hair:
@@ -58,7 +58,7 @@ public class GirlSkin : Singleton<GirlSkin>
                 break;
 
             case ItemType.Pant:
-                ChangePant(texture);
+                ChangePant(data);
                 break;
 
             case ItemType.Glasses:
@@ -83,27 +83,29 @@ public class GirlSkin : Singleton<GirlSkin>
     ///             Change skin for face
     /// </summary>
     /// <param name="material"></param>
-    private void ChangeFace(Material material)
+    private void ChangeFace(ItemData data)
     {
-        faceRenderer.GetComponent<SkinnedMeshRenderer>().material = material;
+        faceRenderer.GetComponent<SkinnedMeshRenderer>().material = data.itemMaterial;
     }
 
     /// <summary>
     ///             Change skin for shirt 
     /// </summary>
     /// <param name="texture"></param>
-    private void ChangeShirt(Texture2D texture)
+    private void ChangeShirt(ItemData data)
     {
-        shirtMaterial.SetTexture("_MainTex", texture);
+        shirtMaterial.SetTexture("_MainTex", data.ingameTexture);
+        GameManager.Instance.shirtData = data;
     }
 
     /// <summary>
     ///             Change skin for pant 
     /// </summary>
     /// <param name="texture"></param>
-    private void ChangePant(Texture2D texture)
+    private void ChangePant(ItemData data)
     {
-        pantMaterial.SetTexture("_MainTex", texture);
+        pantMaterial.SetTexture("_MainTex", data.ingameTexture);
+        GameManager.Instance.pantData = data;
     }
 
     /// <summary>

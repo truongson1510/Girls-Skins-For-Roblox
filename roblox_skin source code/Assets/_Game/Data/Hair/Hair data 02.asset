@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   itemSprite: {fileID: 21300000, guid: 762a2e1d841b24d59be55efaadd3678d, type: 3}
-  hasMaterial: 1
+  hasMaterial: 0
   itemMaterial: {fileID: 0}
   hasTexture: 0
   ingameTexture: {fileID: 0}
