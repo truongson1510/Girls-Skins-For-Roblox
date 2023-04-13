@@ -29,8 +29,13 @@ public class ButtonDownload : MonoBehaviour
     private void Awake()
     {
         button = GetComponent<Button>();
+#if UNITY_ANDROID
         button.onClick.AddListener(SaveImageToPicturesFolderAndroid);
-        //button.onClick.AddListener(SaveImageToPicturesFolderIOS);
+#elif UNITY_IOS
+        button.onClick.AddListener(SaveImageToPicturesFolderIOS);
+#else
+            
+#endif
     }
 
     #endregion
@@ -76,7 +81,7 @@ public class ButtonDownload : MonoBehaviour
         string fileName = $"{data.name}_{data.robloxTexture.name}.png";
 
         // Define the destination path on the Android Pictures folder
-        string destinationPath = Path.Combine(AndroidPicturesFolderPath, fileName);
+        string destinationPath = Path.Combine($"{Application.dataPath}", fileName);
 
         // Write the bytes to the destination path
         File.WriteAllBytes(destinationPath, bytes);
@@ -89,20 +94,6 @@ public class ButtonDownload : MonoBehaviour
 
         // Print a debug message
         Debug.Log("Image saved to Android Pictures folder: " + destinationPath);
-    }
-
-    private string AndroidPicturesFolderPath
-    {
-        get
-        {
-            using (AndroidJavaClass environment = new AndroidJavaClass("android.os.Environment"))
-            {
-                using (AndroidJavaObject directory = environment.CallStatic<AndroidJavaObject>("getExternalStoragePublicDirectory", new object[] { "Pictures" }))
-                {
-                    return directory.Call<string>("getAbsolutePath");
-                }
-            }
-        }
     }
 
     public void SaveImageToPicturesFolderIOS()
