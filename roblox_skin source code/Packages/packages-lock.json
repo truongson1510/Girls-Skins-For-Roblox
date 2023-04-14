@@ -13,6 +13,14 @@
       "source": "local-tarball",
       "dependencies": {}
     },
+    "com.google.firebase.analytics": {
+      "version": "file:../Assets/Firebase  tarball/com.google.firebase.analytics-10.7.0.tgz",
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.google.firebase.app": "10.7.0"
+      }
+    },
     "com.google.firebase.app": {
       "version": "file:../Assets/Firebase  tarball/com.google.firebase.app-10.7.0.tgz",
       "depth": 0,
