@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 5
   itemSprite: {fileID: 21300000, guid: 8d8cfecaf9c5e4da187a7ab91ac44ea4, type: 3}
-  itemMaterial: {fileID: 2100000, guid: f4382de2a7d960b44a3d5af09a0ad2f6, type: 2}
+  hasMaterial: 0
+  itemMaterial: {fileID: 0}
+  hasTexture: 0
+  ingameTexture: {fileID: 0}
+  robloxTexture: {fileID: 0}

@@ -506,6 +506,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785870894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785870895}
+  - component: {fileID: 1785870896}
+  - component: {fileID: 1785870897}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785870895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785870894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785870896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785870894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d778198a6c24fb341adf0861d25ed225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pantData: {fileID: 0}
+  shirtData: {fileID: 0}
+--- !u!114 &1785870897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785870894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80d6a58f0dd53341b5e6c5b70c86ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1972797629
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,7 +809,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
+=======
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
+>>>>>>> Cloud
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1152,7 +1215,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
+=======
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
+>>>>>>> Cloud
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1346,6 +1413,109 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
+=======
+    - target: {fileID: 369628648, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405255222025091563, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listPant.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f30bbd8cf15164458b25ea786ba00c4, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
+    - target: {fileID: 1711128826598016958, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: listShirt.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: a6605e99a3b8f3a4197e91d4e26fd940, type: 2}
+    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2225180562010090969, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251999111363116433, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Cloud
     - target: {fileID: 2618371342570394005, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: girlTransform
       value: 
@@ -1498,6 +1668,25 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3106102762828950897, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Cloud
     - target: {fileID: 6576259282023142754, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_Name
       value: '[Canvas] Game Canvas'
@@ -1586,8 +1775,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552021569627861411, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> Cloud
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+--- !u!1 &2618371343987896593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2618371344493755718, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+  m_PrefabInstance: {fileID: 2618371343987896592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2618371343987896594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2618371343987896593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9585735aad7a2974f9034738dbad590b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: 
 --- !u!1 &2704815980240215316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,7 +2138,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
+=======
+  - {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
+>>>>>>> Cloud
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2480,8 +2710,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceRenderer: {fileID: 3538047613739669797}
+<<<<<<< HEAD
   pantMaterial: {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
   shirtMaterial: {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
+=======
+  pantMaterial: {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
+  shirtMaterial: {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
+>>>>>>> Cloud
   hatCollection:
   - {fileID: 3743141120506742185}
   - {fileID: 3919233908511571747}
@@ -2788,7 +3023,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: edd8251853eb73d4a83713db20bff359, type: 2}
+=======
+  - {fileID: 2100000, guid: f2f9c19662409a84ab8d618786d939a6, type: 2}
+>>>>>>> Cloud
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3063,7 +3302,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+<<<<<<< HEAD
   - {fileID: 2100000, guid: 7c931158b2921a140bdd2863d18a4024, type: 2}
+=======
+  - {fileID: 2100000, guid: 24784a097dd053241ad9e8be702d0e5c, type: 2}
+>>>>>>> Cloud
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

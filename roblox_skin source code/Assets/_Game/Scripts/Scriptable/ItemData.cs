@@ -18,9 +18,19 @@ public class ItemData : ScriptableObject
 	#region Inspector Variables
 
 	public ItemType itemType;
+
 	[PreviewField]
-	public Sprite	itemSprite;
+	public Sprite itemSprite;
+	
+	public bool hasMaterial;
+	[ShowIf("hasMaterial")]
 	public Material itemMaterial;
+
+	public bool hasTexture;
+	[ShowIf("hasTexture")] [PreviewField]
+	public Texture2D ingameTexture;
+	[ShowIf("hasTexture")] [PreviewField]
+	public Texture2D robloxTexture;
 
 	#endregion
 
