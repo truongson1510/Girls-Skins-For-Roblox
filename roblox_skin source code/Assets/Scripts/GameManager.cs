@@ -7,8 +7,8 @@ public class GameManager : Singleton<GameManager>
 {
     #region Inspector Variables
 
-    public ItemData pantData;
-    public ItemData shirtData;
+    [HideInInspector] public ItemData pantData;
+    [HideInInspector] public ItemData shirtData;
 
     #endregion
 
