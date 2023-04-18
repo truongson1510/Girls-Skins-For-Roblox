@@ -576,17 +576,17 @@ MonoBehaviour:
   - advertiser: 1
     advertiserSettings:
     - platform: 0
-      appId: 
-      idBanner: 
-      idInterstitial: 
+      appId: ca-app-pub-2117843389581757~8311477892
+      idBanner: ca-app-pub-2117843389581757/6371161523
+      idInterstitial: ca-app-pub-2117843389581757/2787139730
       idRewarded: 
       ID_TIER_1: 
       ID_TIER_2: 
       ID_TIER_3: 
     - platform: 1
-      appId: 
-      idBanner: 
-      idInterstitial: 
+      appId: ca-app-pub-2117843389581757~2132495625
+      idBanner: ca-app-pub-2117843389581757/9708320045
+      idInterstitial: ca-app-pub-2117843389581757/4559386405
       idRewarded: 
       ID_TIER_1: 
       ID_TIER_2: 

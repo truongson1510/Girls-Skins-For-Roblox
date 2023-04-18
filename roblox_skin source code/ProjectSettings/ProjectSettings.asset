@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: alpsapp.roblskinplay
+    Android: com.alpsapp.roblskinasc
     iPhone: com.company.SkinsOfGirls
   buildNumber:
     Standalone: 0
