@@ -8,7 +8,7 @@
       "url": "https://packages.unity.com"
     },
     "com.google.external-dependency-manager": {
-      "version": "file:../Assets/Firebase  tarball/com.google.external-dependency-manager-1.2.175.tgz",
+      "version": "file:../Assets/Firebase/com.google.external-dependency-manager-1.2.175.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {}

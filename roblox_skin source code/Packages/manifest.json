@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.google.external-dependency-manager": "file:../Assets/Firebase  tarball/com.google.external-dependency-manager-1.2.175.tgz",
+    "com.google.external-dependency-manager": "file:../Assets/Firebase/com.google.external-dependency-manager-1.2.175.tgz",
     "com.google.firebase.analytics": "file:../Assets/Firebase  tarball/com.google.firebase.analytics-10.7.0.tgz",
     "com.google.firebase.app": "file:../Assets/Firebase  tarball/com.google.firebase.app-10.7.0.tgz",
     "com.google.firebase.crashlytics": "file:../Assets/Firebase  tarball/com.google.firebase.crashlytics-10.7.0.tgz",
