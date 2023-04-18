@@ -27,9 +27,9 @@ public class UIManager : Singleton<UIManager>
 
     #region Member Variables
 
-    private int screenHeight;
-
-    private bool isPanelMenuMoving;
+    private int     screenHeight;
+    private int     itemClickCount;
+    private bool    isPanelMenuMoving;
 
     #endregion
 
@@ -42,6 +42,7 @@ public class UIManager : Singleton<UIManager>
     private void Start()
     {
         screenHeight    = Screen.height * 2;
+        itemClickCount  = 0;
 
         playButton.onClick.AddListener(() => 
         { 
@@ -74,9 +75,13 @@ public class UIManager : Singleton<UIManager>
 
     public void OpenRating()
     {
-        if(PlayerPrefs.GetInt(StringCollection.DATA_RATED)  != 1)
+        itemClickCount++;
+        if(itemClickCount % 3 == 0)
         {
-            panelRate.gameObject.SetActive(true);
+            if (PlayerPrefs.GetInt(StringCollection.DATA_RATED) != 1)
+            {
+                panelRate.gameObject.SetActive(true);
+            }
         }
     }
 

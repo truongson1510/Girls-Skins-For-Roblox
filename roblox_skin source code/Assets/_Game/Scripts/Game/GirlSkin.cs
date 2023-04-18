@@ -23,6 +23,7 @@ public class GirlSkin : Singleton<GirlSkin>
     #region Member Variables
 
     private Animator animator;
+    private ItemData data;
 
     #endregion
 
@@ -43,6 +44,12 @@ public class GirlSkin : Singleton<GirlSkin>
 
     public void ChangeSkin(ItemType type, int index, ItemData data)
     {
+        if(this.data != data)
+        {
+            UIManager.Instance.OpenRating();
+        }
+        this.data = data;
+
         switch (type)
         {
             case ItemType.Face:
