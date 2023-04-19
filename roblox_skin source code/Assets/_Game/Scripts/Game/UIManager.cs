@@ -60,8 +60,12 @@ public class UIManager : Singleton<UIManager>
 
         saveButton.onClick.AddListener(() => 
         { 
-            MovePanelSaveOut(false);
-            MovePanelGameOut(true);
+            UnityAction actionComplete = delegate ()
+            {
+                MovePanelSaveOut(false);
+                MovePanelGameOut(true);
+            };
+            Advertisements.Instance.ShowInterstitial(actionComplete);
         });
 
         menuButton.onClick.AddListener(() => 
