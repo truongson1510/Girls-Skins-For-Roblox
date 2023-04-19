@@ -1612,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -50
       objectReference: {fileID: 0}
+    - target: {fileID: 6576259282023142753, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6576259282023142754, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_Name
       value: '[Canvas] Game Canvas'

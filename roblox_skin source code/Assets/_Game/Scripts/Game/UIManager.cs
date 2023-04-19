@@ -2,6 +2,8 @@
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
+using UnityEngine.Events;
+using ATSoft.Ads;
 
 public class UIManager : Singleton<UIManager>
 {
@@ -48,6 +50,13 @@ public class UIManager : Singleton<UIManager>
         { 
             MovePanelMenuOut(true);
             MovePanelGameOut(false);
+
+            UnityAction actionComplete_inter_1 = delegate ()
+            {
+                Debug.Log("<color=orange> ShowInterstitial </color>");
+                //Observer.Instance.Notify(MyStrings.EVENT_BUTTON_TO_START_GAMEPLAY);
+            };
+            Advertisements.Instance.ShowInterstitial(actionComplete_inter_1, "start_main_button");
         });
 
         backButton.onClick.AddListener(() => 
