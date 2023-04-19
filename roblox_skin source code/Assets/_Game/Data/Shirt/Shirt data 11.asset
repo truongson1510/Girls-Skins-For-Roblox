@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47eac41603736e84a8d2cd81fb5fc2c2, type: 3}
+  m_Name: Shirt data 11
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemSprite: {fileID: 21300000, guid: da545229eea36164d8b8cba2f75a1143, type: 3}
+  hasMaterial: 0
+  itemMaterial: {fileID: 0}
+  hasTexture: 1
+  ingameTexture: {fileID: 2800000, guid: 1815f85d853f60743bfedd252d51ae15, type: 3}
+  robloxTexture: {fileID: 2800000, guid: 933e8533b3af7d047b44ad7ec3ad70f7, type: 3}

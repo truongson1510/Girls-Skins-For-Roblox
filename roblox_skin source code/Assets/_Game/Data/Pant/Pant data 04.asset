@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Pant data 04
   m_EditorClassIdentifier: 
   itemType: 3
-  itemSprite: {fileID: 21300000, guid: ac61f0838929e43a2a50b583c80ebbcd, type: 3}
+  itemSprite: {fileID: 21300000, guid: 91976e8b9ce0f0341838727acd55621c, type: 3}
   hasMaterial: 0
   itemMaterial: {fileID: 0}
   hasTexture: 1
-  ingameTexture: {fileID: 2800000, guid: 9b5f13e791e1ca44f8e936377836b1bf, type: 3}
-  robloxTexture: {fileID: 2800000, guid: 9b5f13e791e1ca44f8e936377836b1bf, type: 3}
+  ingameTexture: {fileID: 2800000, guid: c30e8c5ed83bfc44eb84c820c6d09cb2, type: 3}
+  robloxTexture: {fileID: 2800000, guid: 32174abfffb2be74e9c339e524e00b96, type: 3}

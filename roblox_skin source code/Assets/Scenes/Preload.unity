@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3670394668351519307, guid: fc2e43f40cb5356438853169e26168e2, type: 3}
       propertyPath: m_Name
-      value: SDK
+      value: SDKManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc2e43f40cb5356438853169e26168e2, type: 3}

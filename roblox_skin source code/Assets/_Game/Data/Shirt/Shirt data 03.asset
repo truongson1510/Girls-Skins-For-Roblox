@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Shirt data 03
   m_EditorClassIdentifier: 
   itemType: 1
-  itemSprite: {fileID: 21300000, guid: 916f5d38d695748ae98093defd141a9f, type: 3}
+  itemSprite: {fileID: 21300000, guid: da545229eea36164d8b8cba2f75a1143, type: 3}
   hasMaterial: 0
   itemMaterial: {fileID: 0}
   hasTexture: 1
-  ingameTexture: {fileID: 2800000, guid: 0c250e0c2270ded4ca424f83e3a86a75, type: 3}
-  robloxTexture: {fileID: 2800000, guid: 0c250e0c2270ded4ca424f83e3a86a75, type: 3}
+  ingameTexture: {fileID: 2800000, guid: ebd01462758260144be586cb16fb0142, type: 3}
+  robloxTexture: {fileID: 2800000, guid: 201d15a6afadd454a9f77b2e75fa460e, type: 3}
