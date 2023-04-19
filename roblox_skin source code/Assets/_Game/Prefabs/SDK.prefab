@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initAppTrackingTransparency: 0
   initAdvertisement: 1
-  initFirebase: 0
+  initFirebase: 1
 --- !u!1 &3670394668634768185
 GameObject:
   m_ObjectHideFlags: 0

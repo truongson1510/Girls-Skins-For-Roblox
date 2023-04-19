@@ -606,7 +606,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  loadingDuration: 10
+  loadingDuration: 6
 --- !u!1 &2357030592202501119
 GameObject:
   m_ObjectHideFlags: 0

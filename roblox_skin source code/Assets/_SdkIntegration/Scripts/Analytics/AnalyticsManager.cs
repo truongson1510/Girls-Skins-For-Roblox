@@ -54,29 +54,14 @@ namespace ATSoft
         public const string daysPlaying = "days_playing";
         public const string ad_click_AOA = "ad_OnAdDidRecordImpression_aoa";
 
-        #region ------------------------ GANE EVENT ------------------------------
+        #region ------------------------ LOG EVENTS -----------------------------
 
-        public const string ads_double_power = "ads_double_power";
-        public const string ads_offer_weapon = "ads_offer_weapon";
-
-        public const string start_main_mode_level = "start_main_mode_level_";
-        public const string win_main_mode_level = "win_main_mode_level_";
-        public const string lose_main_mode_level = "lose_main_mode_level_";
-
-        public const string start_extra_mode_level = "start_extra_mode_level_";
-        public const string win_extra_mode_level = "win_extra_mode_level_";
-        public const string lose_extra_mode_level = "lose_extra_mode_level_";
-
-        public const string skip_main_mode_level = "skip_main_mode_level_";
-        public const string replay_main_mode_level = "replay_main_mode_level_";
-
-        public const string ads_win_main_mode_spin = "ads_win_main_mode_spin";
-        public const string ads_win_extra_mode_spin = "ads_win_extra_mode_spin";
-        public const string skip_extra_mode_level = "skip_extra_mode_level_";
-
-        public const string build_house = "build_house_";
-        public const string free_spin = "free_spin";
-        public const string ads_spin = "ads_spin";
+        public const string category_face = "category_face_";
+        public const string category_pant = "category_pant_";
+        public const string category_shirt = "category_shirt_";
+        public const string category_hat = "category_hat_";
+        public const string category_hair = "category_hair_";
+        public const string category_glasses = "category_glasses_";
 
         #endregion --------------------------------------------------------------
     }
@@ -119,243 +104,42 @@ namespace ATSoft
 
         /// <summary>
         /// 
-        ///     1, start game mode chính
-        /// 
         /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventStartLevelMain(int level)
+        /// <param name="itemType"></param>
+        /// <param name="index"></param>
+        public static void GameLogEventStartLevelMain(ItemType itemType, int index)
         {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.start_main_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            //GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, level.ToString());
-        }
+            string logString = "";
+            switch (itemType)
+            {
+                case ItemType.Face:
+                    logString = $"{FirebaseStringEvent.category_face}{index}";
+                    break;
 
-        /// <summary>
-        /// 
-        ///     2, win game mode chính (chỉ cần win)
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventCompleteLevelMain(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.win_main_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            //GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, level.ToString());
-        }
+                case ItemType.Shirt:
+                    logString = $"{FirebaseStringEvent.category_shirt}{index}";
+                    break;
 
-        /// <summary>
-        /// 
-        ///     3, lost game mode chính
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventFailLevelMain(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.lose_main_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            //GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, level.ToString());
-        }
+                case ItemType.Hair:
+                    logString = $"{FirebaseStringEvent.category_hair}{index}";
+                    break;
 
-        /// <summary>
-        /// 
-        ///     4, start game mode phụ
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventStartLevelExtra(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.start_extra_mode_level}{level}",
-                new Parameter("Level", level));
+                case ItemType.Pant:
+                    logString = $"{FirebaseStringEvent.category_pant}{index}";
+                    break;
 
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.start_extra_mode_level, fields);
-        }
+                case ItemType.Glasses:
+                    logString = $"{FirebaseStringEvent.category_glasses}{index}";
+                    break;
 
-        /// <summary>
-        /// 
-        ///     5, mode phụ
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventCompleteLevelExtra(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.win_extra_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.win_extra_mode_level, fields);
-        }
+                case ItemType.Hat:
+                    logString = $"{FirebaseStringEvent.category_hat}{index}";
+                    break;
+            }
 
-        /// <summary>
-        /// 
-        ///     6, mode phụ
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogEventFailLevelExtra(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.lose_extra_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.lose_extra_mode_level, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     7, bấm build nhà thứ X trong mode phụ
-        /// 
-        /// </summary>
-        /// <param name="house"></param>
-        public static void GameLogEventBuildHouseExtra(int house)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.build_house}{house}",
-                new Parameter("HouseId", house));
-            
-            var fields = new Dictionary<string, object> {{"HouseId", house}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.build_house, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     8, skip level mode chính (chỉ cần bấm vào là check)
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogSkipMainLevel(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.skip_main_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.skip_main_mode_level, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     9, replay level mode chính (chỉ cần bấm vào là check)
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogReplayMainLevel(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.replay_main_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.replay_main_mode_level, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     10, Kiểm tra số lần bấm xem ads nhận thêm coin ở màn hình win 
-        /// 
-        /// </summary>
-        public static void GameLogAdsWinMainSpin()
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.ads_win_main_mode_spin}");
-            
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.ads_win_main_mode_spin);
-        }
-
-        /// <summary>
-        /// 
-        ///     11, 
-        /// 
-        /// </summary>
-        public static void GameLogAdsWinExtraSpin()
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.ads_win_extra_mode_spin}");
-            
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.ads_win_extra_mode_spin);
-        }
-
-        /// <summary>
-        /// 
-        ///     12, Skip extra mode button click
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void GameLogSkipExtraLevel(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.skip_extra_mode_level}{level}",
-                new Parameter("Level", level));
-            
-            var fields = new Dictionary<string, object> {{"Level", level}};
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.skip_extra_mode_level, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     13, Free spin button click (Menu)
-        /// 
-        /// </summary>
-        public static void GameLogFreeSpin()
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.free_spin}");
-            
-            //GameAnalytics.NewDesignEvent (FirebaseStringEvent.free_spin);
-        }
-
-        /// <summary>
-        /// 
-        ///     14, Ads spin button click (Menu)
-        /// 
-        /// </summary>
-        public static void GameLogAdsSpin()
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.ads_spin}");
-            
-            //GameAnalytics.NewDesignEvent(FirebaseStringEvent.ads_spin);
-        }
-
-        /// <summary>
-        /// 
-        ///     15, Ads Double Power click
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void DoublePowerButton(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.ads_double_power}{level}",
-                new Parameter("Level", level));
-
-            var fields = new Dictionary<string, object> { { "Level", level } };
-            //GameAnalytics.NewDesignEvent(FirebaseStringEvent.ads_double_power, fields);
-        }
-
-        /// <summary>
-        /// 
-        ///     16, Ads Offer Weapon Button click
-        /// 
-        /// </summary>
-        /// <param name="level"></param>
-        public static void OfferButtonClick(int level)
-        {
-            m_FirebaseManager?.LogAnalyticsEvent(
-                $"{FirebaseStringEvent.ads_offer_weapon}{level}",
-                new Parameter("Level", level));
-
-            var fields = new Dictionary<string, object> { { "Level", level } };
-            //GameAnalytics.NewDesignEvent(FirebaseStringEvent.ads_offer_weapon, fields);
+            m_FirebaseManager?.LogAnalyticsEvent(logString, 
+                new Parameter("Type", $"{itemType}"), 
+                new Parameter("Index", $"{index}"));
         }
 
         #endregion --------------------------------------------------------------

@@ -1,4 +1,5 @@
 
+using ATSoft;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
@@ -47,6 +48,7 @@ public class ItemButton : MonoBehaviour
 	public void OnClick()
 	{
 		GirlSkin.Instance.ChangeSkin(data.itemType, index, data);
+		AnalyticsManager.GameLogEventStartLevelMain(data.itemType, (index + 1));
 	}
 
 	#endregion
