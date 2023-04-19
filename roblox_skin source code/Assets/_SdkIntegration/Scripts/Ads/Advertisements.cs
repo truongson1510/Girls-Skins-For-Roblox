@@ -13,6 +13,7 @@ using UnityEngine.Events;
 //              AVT <an.viettrung.m@gmail.com>             
 //  Copyright (c) 2022 AT Soft
 // ----------------------------------------------
+
 namespace ATSoft.Ads
 {
     public class Advertisements : Singleton<Advertisements>, IService
@@ -503,7 +504,7 @@ namespace ATSoft.Ads
         {
             if (!pause && !ResumeFromAds && enableAds)
             {
-                ShowAppOpenAd();
+                //ShowAppOpenAd();
             }
         }
 
