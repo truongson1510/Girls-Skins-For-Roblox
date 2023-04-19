@@ -259,7 +259,7 @@ MonoBehaviour:
       idBanner: ca-app-pub-2117843389581757/6371161523
       idInterstitial: ca-app-pub-2117843389581757/2787139730
       idRewarded: ca-app-pub-2117843389581757/2787139730
-      ID_TIER_1: ca-app-pub-2117843389581757/2787139730
+      ID_TIER_1: 
       ID_TIER_2: 
       ID_TIER_3: 
     - platform: 1
@@ -267,7 +267,7 @@ MonoBehaviour:
       idBanner: ca-app-pub-2117843389581757/9708320045
       idInterstitial: ca-app-pub-2117843389581757/4559386405
       idRewarded: ca-app-pub-2117843389581757/2787139730
-      ID_TIER_1: ca-app-pub-2117843389581757/2787139730
+      ID_TIER_1: 
       ID_TIER_2: 
       ID_TIER_3: 
   ResumeFromAds: 0

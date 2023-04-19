@@ -71,9 +71,10 @@ public class AssetBundleManager : Singleton<AssetBundleManager>
 
     private IEnumerator WaitingToExecute(Action onCompleteAction = null)
     {
-        if(!pantsBundle.isDownloadComplete || !shirtsBundle.isDownloadComplete)
+        while(!pantsBundle.isDownloadComplete || !shirtsBundle.isDownloadComplete)
+        {
             yield return null;
-
+        }
         onCompleteAction?.Invoke();
     }
 
@@ -86,13 +87,19 @@ public class AssetBundleData
     public string name;
     [HideInInspector] public string         url;
     [HideInInspector] public AssetBundle    bundle;
-    [HideInInspector] public bool           isDownloadComplete;
     [HideInInspector] public List<ItemData> dataItems;
+    [HideInInspector] public bool           isDownloadComplete;
 
     public IEnumerator DownloadAsset()
     {
         UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
         yield return www.SendWebRequest();
+
+        while (!www.isDone)
+        {
+            yield return null;
+        }
+        isDownloadComplete = true;
 
         if (www.result == UnityWebRequest.Result.Success)
         {
