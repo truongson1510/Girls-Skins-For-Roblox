@@ -1514,6 +1514,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2618371342713702584, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_Name
+      value: '[Button] Save'
+      objectReference: {fileID: 0}
     - target: {fileID: 2618371342776204326, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1649,6 +1653,10 @@ PrefabInstance:
     - target: {fileID: 2618371344434062449, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618371344434062449, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00026523878
       objectReference: {fileID: 0}
     - target: {fileID: 2618371344493755719, guid: cc689ec5523d51445a88d94e11a9c714, type: 3}
       propertyPath: m_SizeDelta.x

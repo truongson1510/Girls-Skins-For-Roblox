@@ -56,12 +56,12 @@ namespace ATSoft
 
         #region ------------------------ LOG EVENTS -----------------------------
 
-        public const string category_face = "category_face_";
-        public const string category_pant = "category_pant_";
-        public const string category_shirt = "category_shirt_";
-        public const string category_hat = "category_hat_";
-        public const string category_hair = "category_hair_";
-        public const string category_glasses = "category_glasses_";
+        public const string category_face = "category_face";
+        public const string category_pant = "category_pant";
+        public const string category_shirt = "category_shirt";
+        public const string category_hat = "category_hat";
+        public const string category_hair = "category_hair";
+        public const string category_glasses = "category_glasses";
 
         #endregion --------------------------------------------------------------
     }
@@ -113,33 +113,31 @@ namespace ATSoft
             switch (itemType)
             {
                 case ItemType.Face:
-                    logString = $"{FirebaseStringEvent.category_face}{index}";
+                    logString = $"{FirebaseStringEvent.category_face}";
                     break;
 
                 case ItemType.Shirt:
-                    logString = $"{FirebaseStringEvent.category_shirt}{index}";
+                    logString = $"{FirebaseStringEvent.category_shirt}";
                     break;
 
                 case ItemType.Hair:
-                    logString = $"{FirebaseStringEvent.category_hair}{index}";
+                    logString = $"{FirebaseStringEvent.category_hair}";
                     break;
 
                 case ItemType.Pant:
-                    logString = $"{FirebaseStringEvent.category_pant}{index}";
+                    logString = $"{FirebaseStringEvent.category_pant}";
                     break;
 
                 case ItemType.Glasses:
-                    logString = $"{FirebaseStringEvent.category_glasses}{index}";
+                    logString = $"{FirebaseStringEvent.category_glasses}";
                     break;
 
                 case ItemType.Hat:
-                    logString = $"{FirebaseStringEvent.category_hat}{index}";
+                    logString = $"{FirebaseStringEvent.category_hat}";
                     break;
             }
 
-            m_FirebaseManager?.LogAnalyticsEvent(logString, 
-                new Parameter("Type", $"{itemType}"), 
-                new Parameter("Index", $"{index}"));
+            m_FirebaseManager?.LogAnalyticsEvent(logString, new Parameter($"{itemType}", $"{index}"));
         }
 
         #endregion --------------------------------------------------------------
